@@ -18,9 +18,9 @@ jobs:
     displayName: 'Prepare analysis on SonarCloud'
     inputs:
       SonarCloud: Sonarcloud
-      organization: nlog
-      projectKey: nlog2
-      projectName: NLog
+      organization: cherry-zhang-wicresoft-north-america-ltd89616
+      projectKey: Net45
+      projectName: Net45
       projectVersion: '$(Build.BuildId)'
   - template: azure/build-run-tests.yml
     parameters:
