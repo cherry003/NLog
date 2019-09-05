@@ -22,7 +22,7 @@ jobs:
       projectKey: nlog2
       projectName: NLog
       projectVersion: '$(Build.BuildId)'
-  - template: .azure/build-run-tests.yml
+  - template: azure/build-run-tests.yml
     parameters:
       testframework: net45
       runframework: net452
