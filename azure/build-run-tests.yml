@@ -7,14 +7,14 @@ steps:
   inputs:
     versionSpec: 5.1.0
 
- - task: MSBuild@1
+- task: MSBuild@1
   displayName: 'Restore and build NLog'
   inputs:
     solution: '$(solution)'
     platform: '$(BuildPlatform)'
     msbuildArguments: '-t:restore,build -v:q'
     maximumCpuCount: true
- - task: MSBuild@1
+- task: MSBuild@1
   displayName: 'Build tests'
   inputs:
     solution: '$(testProject)'
