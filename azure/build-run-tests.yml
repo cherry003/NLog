@@ -1,7 +1,7 @@
 # default 
 parameters:
   codeCoverageEnabled: false
- steps:
+steps:
 - task: NuGetToolInstaller@0
   displayName: 'Use NuGet 5.1.0'
   inputs:
